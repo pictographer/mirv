@@ -45,10 +45,10 @@ A backup copy is created/updated before a file is deployed.
 
 # Tasks
 
-[ ] Selective deployment
-[ ] Dry run mode 
-[ ] Command line help
-[ ] Shared settings
-[ ] Offer to create initial directory structure
-[ ] Manage the path to support testing before deployment
+- [ ] Selective deployment
+- [ ] Dry run mode 
+- [ ] Command line help
+- [ ] Shared settings
+- [ ] Offer to create initial directory structure
+- [ ] Manage the path to support testing before deployment
 
