@@ -6,7 +6,7 @@
 # TODO: implement --help
 # TODO: implement dry run mode
 
-CONFIG_DIR=~/configs
+CONFIG_DIR=~/mirv
 HOST=$(hostname)
 HOST_DIR=${CONFIG_DIR}/hosts/$HOST
 BACKUP_DIR=${CONFIG_DIR}/backups/$HOST
