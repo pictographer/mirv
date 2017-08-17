@@ -7,9 +7,9 @@ a notion of a workspace view as is found in Perforce, for example.
 
 There are two scripts that make this work.
 
-*`capture.bash`* copies its arguments to a repository.
+**`capture.bash`** copies its arguments to a repository.
 
-*`deploy.bash`* updates all system configuration files that have been more
+**`deploy.bash`** updates all system configuration files that have been more
 recently changed in the repository.
 
 The scripts assume a hosts directory and a backups directory exist and
@@ -43,12 +43,12 @@ files therein.
 
 A backup copy is created/updated before a file is deployed.
 
-# TODO
+# Tasks
 
-1. Selective deployment
-1. Dry run mode 
-1. Command line help
-1. Shared settings
-1. Offer to create initial directory structure
-1. Manage the path to support testing before deployment
+[ ] Selective deployment
+[ ] Dry run mode 
+[ ] Command line help
+[ ] Shared settings
+[ ] Offer to create initial directory structure
+[ ] Manage the path to support testing before deployment
 
