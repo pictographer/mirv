@@ -1,6 +1,7 @@
 #!/usr/bin/lua
 
-io.popen("/usr/sbin/lctl 1")
+io.popen("/usr/sbin/lctl white")
+io.popen("/usr/sbin/lctl bright")
 
 print("Content-Type: text/html")
 print("")
