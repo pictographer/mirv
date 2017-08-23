@@ -6,9 +6,9 @@ It should be useful for any version control system.
 
 There are two scripts that make this work.
 
-**[capture.bash](../hosts/jet/usr/local/bin/capture.bin)** copies its arguments to a repository.
+**[capture.bash](https://github.com/pictographer/mirv/blob/master/hosts/jet/usr/local/bin/capture.bash)** copies its arguments to a repository.
 
-**[deploy.bash](../hosts/jet/usr/local/bin/deploy.bin)** updates all system configuration files that have been more
+**[deploy.bash](https://github.com/pictographer/mirv/blob/master/hosts/jet/usr/local/bin/deploy.bash)** updates all system configuration files that have been more
 recently changed in the repository.
 
 The scripts assume a hosts directory and a backups directory exist and
