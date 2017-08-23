@@ -2,8 +2,7 @@ The scripts here copy files from their system deployment location to a
 development location and back. This is intended to reduce the
 annoyances of using Git for versioning config files.
 
-It should be useful for any version control system that does not have
-a notion of a workspace view as is found in Perforce, for example.
+It should be useful for any version control system.
 
 There are two scripts that make this work.
 
