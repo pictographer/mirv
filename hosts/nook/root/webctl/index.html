@@ -1,0 +1,161 @@
+<html>
+<head>
+
+<title>Butler's Sink Under Cabinet Light</title>
+<base href="http://nook/cgi-bin/">
+<style type="text/css" media="all"><!--
+body { 
+  font-family: Arial, Helvetica, sans-serif; 
+  text-align: center;
+  margin: 0; height: 100%; overflow: hidden;
+  padding: 2pc 0 0 0;
+}
+button { 
+  border: 1px solid black; 
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+}
+form { 
+  display: inline-block;
+  height: 15%;
+  width: 15%;
+  margin: 1pc;
+}
+
+/* https://jsfiddle.net/jdniki/Vj87c/ */
+#rainbow {
+    background: red; /* not working, let's see some red */
+    background: -moz-linear-gradient(left,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 255, 0, 1) 15%,
+        rgba(0, 255, 0, 1) 30%,
+        rgba(0, 255, 255, 1) 50%,
+        rgba(0, 0, 255, 1) 65%,
+        rgba(255, 0, 255, 1) 80%,
+        rgba(255, 0, 0, 1) 100%);
+    background: -webkit-gradient(linear,  left top,  right top, 
+        color-stop(0%, rgba(255, 0, 0, 1)), 
+        color-stop(15%, rgba(255, 255, 0, 1)),
+        color-stop(30%, rgba(0, 255, 0, 1)),
+        color-stop(50%, rgba(0, 255, 255, 1)),
+        color-stop(65%, rgba(0, 0, 255, 1)),
+        color-stop(80%, rgba(255, 0, 255, 1)),
+        color-stop(100%, rgba(255, 0, 0, 1)));
+}
+
+#rainbow {
+    width: 100%;
+    height: 100%;
+}
+
+#bg {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+background: rgb(181,189,200); /* Old browsers */
+background: -moz-linear-gradient(top, rgb(181,189,200) 0%, rgb(130,140,149) 36%, rgb(40,52,59) 100%); /* FF3.6-15 */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(181,189,200)), color-stop(36%,rgb(130,140,149)), color-stop(100%,rgb(40,52,59))); /* Chrome4-9,Safari4-5 */
+background: -webkit-linear-gradient(top, rgb(181,189,200) 0%,rgb(130,140,149) 36%,rgb(40,52,59) 100%); /* Chrome10-25,Safari5.1-6 */
+background: -o-linear-gradient(top, rgb(181,189,200) 0%,rgb(130,140,149) 36%,rgb(40,52,59) 100%); /* Opera 11.10-11.50 */
+background: -ms-linear-gradient(top, rgb(181,189,200) 0%,rgb(130,140,149) 36%,rgb(40,52,59) 100%); /* IE10 preview */
+background: linear-gradient(to bottom, rgb(181,189,200) 0%,rgb(130,140,149) 36%,rgb(40,52,59) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+height: 100%;
+width: 100%;
+}
+
+--></style>
+
+</head>
+
+<body id="bg">
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: #222">
+    <img src="../power.png" width="64" height="64">
+  </button>
+  <input type="hidden" name="black">
+</form>
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: #888">
+    <img src="../1x1.png" width="64" height="64">
+  </button>
+  <input type="hidden" name="dim">
+</form>
+<form action="lctl" method="get">
+  <button type=submit" style="background-color: #AAA">
+    <img src="../1x1.png" width="64" height="64">      
+  </button>
+  <input type="hidden" name="dim">
+</form>
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: #DDD">
+    <img src="../1x1.png" width="64" height="64">      
+  </button>
+  <input type="hidden" name="bright">
+</form>
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: #FFF">
+    <img src="../1x1.png" width="64" height="64">      
+  </button>
+  <input type="hidden" name="full">
+</form>
+
+<hr>
+
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: red"></button>
+  <input type="hidden" name="red">
+</form>
+
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: orange"></button>
+  <input type="hidden" name="orange">
+</form>
+
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: yellow"></button>
+  <input type="hidden" name="yellow">
+</form>
+
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: limegreen"></button>
+  <input type="hidden" name="green">
+</form>
+
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: cyan"></button>
+  <input type="hidden" name="aqua">
+</form>
+
+<br>
+
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: blue"></button>
+  <input type="hidden" name="blue">
+</form>
+
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: magenta"></button>
+  <input type="hidden" name="purple">
+</form>
+
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: white"></button>
+  <input type="hidden" name="white">
+</form>
+
+<form action="lctl" method="get">
+  <button id="rainbow" type="submit"></button>
+  <input type="hidden" name="rainbow">
+</form>
+
+<form action="lctl" method="get">
+  <button type="submit" style="background-color: red"></button>
+  <input type="hidden" name="alarm">
+</form>
+
+</body>
+</html>

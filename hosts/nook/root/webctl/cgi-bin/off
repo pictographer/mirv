@@ -1,0 +1,10 @@
+#!/usr/bin/lua
+
+io.popen("/usr/sbin/lctl 0")
+
+print("Content-Type: text/html")
+print("")
+print("<!DOCTYPE html>")
+print("<html><body><h1>Off</h1></body></html>")
+print("")
+

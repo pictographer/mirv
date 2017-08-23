@@ -1,0 +1,39 @@
+#!/usr/bin/lua                                                              
+                                                                            
+--        print("Content-Type: text/html")                                    
+--        print("")                                                           
+--        print("<!DOCTYPE html>")                                            
+--        print("Hello")                                                      
+--        print("")
+
+io.write ("Content-type: text/plain\r\n\r\n")
+io.write("Hello world\n")
+
+function dump(o)
+        error({code=121})
+        if type(o) == 'table' then
+                local s = '{ '
+                for k,v in pairs(o) do
+                        if type(k) ~= 'number' then k = '"'..k..'"' end
+                        s = s .. '['..k..'] = ' .. dump(v) .. ','
+                end
+                return s .. '} '
+        else
+                return tostring(o)
+        end
+end
+
+-- This doesn't get called perhaps because the script is treated as an
+-- ordinary CGI script with post data to stdin and parameters through 
+-- environment variables.
+-- https://forum.openwrt.org/viewtopic.php?id=45194
+function handle_request(env)
+        io.write("Hello world 2\n")
+
+        local status, err = pcall(function () io.write("env: ") io.write(dump(env)) end)
+        if not status then
+                print("\nRUNTIME ERROR: "..err)
+        end
+
+        io.write("\nEND")
+end  

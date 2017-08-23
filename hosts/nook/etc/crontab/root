@@ -1,0 +1,20 @@
+# Artificial sunset: yellow, orange, red
+0 19 * * * /usr/sbin/lctl full
+1 19 * * * /usr/sbin/lctl yellow
+0 20 * * * /usr/sbin/lctl orange
+0 21 * * * /usr/sbin/lctl red
+
+# Artificial sunrise: orange, yellow, green, cyan, blue
+1 21 * * * /usr/sbin/lctl dim
+0  7 * * * /usr/sbin/lctl orange
+15 7 * * * /usr/sbin/lctl yellow
+29 7 * * * /usr/sbin/lctl green
+30 7 * * * /usr/sbin/lctl aqua
+0  8 * * * /usr/sbin/lctl full
+1  8 * * * /usr/sbin/lctl blue
+
+# Magenta for lunch
+30 11 * * * /usr/sbin/lctl purple
+
+# Rainbow for after work
+0 14 * * * /usr/sbin/lctl rainbow

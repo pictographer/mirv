@@ -1,0 +1,14 @@
+#!/usr/bin/lua                                                              
+q = os.getenv("QUERY_STRING")
+if q then
+   io.popen("echo " .. q:sub(1, -2) .. " > /tmp/q")
+   io.popen("/usr/sbin/lctl " .. q:sub(1, -2))
+end
+io.write ("Content-type: text/html\r\n\r\n")
+io.write([[
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; URL=http://nook/index.html">
+  </head>
+</html>
+]])
