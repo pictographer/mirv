@@ -13,7 +13,9 @@ recently changed in the repository.
 
 The scripts assume a hosts directory and a backups directory exist and
 the directories within them mirror the file system locations of the
-files therein. 
+files therein.
+
+The **`capture.bash`** and **`deploy.bash`** scripts are in `./hosts/jet/usr/local/bin`.
 
 ```
 ~/mirv
