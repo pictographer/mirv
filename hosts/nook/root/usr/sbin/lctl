@@ -1,0 +1,2 @@
+# Send a command to the Teensy 3.2 via the USB serial device.
+printf "$1\n" > /dev/ttyACM0
