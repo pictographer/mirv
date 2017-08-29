@@ -1,0 +1,5 @@
+#!/bin/sh
+
+LOGDIR=/home/corbett/pvtools/pv/serlux
+
+echo $(ssh root@nit3 log.lua) >> $LOGDIR/$(date +%Y) 2>>/home/corbett/wtfcron
