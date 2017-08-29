@@ -1,6 +1,6 @@
 #!/usr/bin/lua
 
-io.popen("/usr/sbin/lctl 0")
+io.popen("/usr/sbin/lctl black")
 
 print("Content-Type: text/html")
 print("")

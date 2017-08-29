@@ -2,19 +2,20 @@ The scripts here copy files from their system deployment location to a
 development location and back. This is intended to reduce the
 annoyances of using Git for versioning config files.
 
-It should be useful for any version control system that does not have
-a notion of a workspace view as is found in Perforce, for example.
+It should be useful for any version control system.
 
 There are two scripts that make this work.
 
-**`capture.bash`** copies its arguments to a repository.
+**[capture.bash](https://github.com/pictographer/mirv/blob/master/hosts/jet/usr/local/bin/capture.bash)** copies its arguments to a repository.
 
-**`deploy.bash`** updates all system configuration files that have been more
+**[deploy.bash](https://github.com/pictographer/mirv/blob/master/hosts/jet/usr/local/bin/deploy.bash)** updates all system configuration files that have been more
 recently changed in the repository.
 
 The scripts assume a hosts directory and a backups directory exist and
 the directories within them mirror the file system locations of the
-files therein. 
+files therein.
+
+The **`capture.bash`** and **`deploy.bash`** scripts are in `./hosts/jet/usr/local/bin`.
 
 ```
 ~/mirv
