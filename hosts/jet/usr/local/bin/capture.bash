@@ -19,8 +19,8 @@ BACKUP_DIR=${CONFIG_DIR}/backups/$HOST
 # Should not overwrite a corresponding file under hosts/.
 
 for host_path in "$@"; do
-    repo_path=${HOST_DIR}$host_path
     if [ -r $host_path ]; then
+        repo_path=${HOST_DIR}$(realpath $host_path)
         if [ -e $repo_path ]; then
             echo "$host_path is already captured."
             cmp -s $host_path $repo_path
@@ -34,8 +34,8 @@ for host_path in "$@"; do
                 fi
             fi
         else
-            echo "Copying $host_path to $HOST_DIR." 
-            sudo cp -a --parents $host_path $HOST_DIR
+            echo "Copying $host_path to $repo_path." 
+            sudo cp -a --parents $host_path $(dirname $repo_path)
         fi
     else
         echo "Unable to read $host_path."
